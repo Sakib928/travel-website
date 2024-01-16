@@ -10,11 +10,16 @@
     font-optical-sizing: auto;
 }
 
+header {
+    border: 2px solid tomato;
+}
+
 /* nav styles */
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo-title {
@@ -27,6 +32,7 @@
 .nav-elements {
     list-style: none;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     color: #424247;
@@ -64,6 +70,16 @@ a {
     color: #FF5400;
 }
 
+/* banner styles */
+.banner-section {
+    margin-top: 50px;
+    text-align: center;
+    background-image: url("../images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
 /* small devices responsive */
 @media screen and (max-width:600px) {
     .nav-elements {
@@ -75,7 +91,7 @@ a {
     }
 
     .hidden {
-        display: block;
+        display: inline-block;
         visibility: visible;
     }
 
