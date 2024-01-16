@@ -10,6 +10,17 @@
     font-optical-sizing: auto;
 }
 
+.btn-orange {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 174px;
+    height: 50px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
 header {
     border: 2px solid tomato;
 }
@@ -79,12 +90,13 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
+    margin-bottom: 100px;
 }
 
 .banner-fields {
@@ -122,6 +134,34 @@ a {
     font-weight: 700;
 }
 
+/* main section */
+/* popular section */
+.popular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-container {
+    max-width: 570px;
+}
+
+.p-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.p-text {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+main {
+    border: 2px solid blue;
+}
+
 /* small devices responsive */
 @media screen and (max-width:600px) {
     .nav-elements {
@@ -156,5 +196,9 @@ a {
         height: 40px;
         border-radius: 8px;
         padding-left: 10px;
+    }
+
+    .popular {
+        flex-direction: column;
     }
 }
