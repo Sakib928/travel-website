@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* shared styles*/
+* {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 10px;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* nav styles */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.nav-elements {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown {
+    list-style: none;
+    display: none;
+}
+
+.nav-title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav-title span {
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.home {
+    color: #FF5400;
+}
+
+/* small devices responsive */
+@media screen and (max-width:600px) {
+    .nav-elements {
+        display: none;
+    }
+
+    .logo-title {
+        display: block;
+    }
+
+    .hidden {
+        display: block;
+        visibility: visible;
+    }
+
+    .hidden:hover {
+        height: 150px;
+        width: 150px;
+    }
+
+    .hidden:hover .dropdown {
+        display: inline-block;
+    }
+}
