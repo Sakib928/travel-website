@@ -398,10 +398,11 @@ main {
 .tags {
     margin-left: -15px;
     display: flex;
-    justify-items: left;
+    flex-wrap: wrap;
 }
 
 .tags p {
+    border: 2px solid tomato;
     display: flex;
     align-items: center;
 }
@@ -443,8 +444,13 @@ main {
 
 /* promotions */
 .promo {
-    height: 450px;
     display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.promo-text {
+    max-width: 600px;
 }
 
 iframe {
@@ -456,6 +462,22 @@ iframe {
 .promo h2 {
     margin-bottom: 30px;
 }
+
+/* bonus */
+.bonus {
+    height: 380px;
+    background: linear-gradient(90deg, rgba(134, 208, 186, 1) 0%, rgba(66, 113, 117, 0.0844712885154062) 81%), url("../images/—Pngtree—summer\ ocean\ beach\ travel\ poster_1113389.jpg");
+    background-size: cover;
+    padding: 50px;
+    border-radius: 1rem;
+}
+
+.bonus p {
+    color: white;
+    font-weight: 700;
+}
+
+
 
 /* small devices responsive */
 @media screen and (max-width:600px) {
@@ -517,17 +539,21 @@ iframe {
     }
 
     .inner-card {
-        width: 95%;
+        margin: 0 auto;
+        width: 90%;
+        height: 70%;
     }
 
     .promo {
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
-    iframe {
+    video {
         width: 95%;
-        height: 200px;
-        border-radius: 0;
-        margin-bottom: 30px;
+    }
+
+    .bonus {
+        text-align: center;
     }
 }
