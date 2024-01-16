@@ -535,7 +535,8 @@ iframe {
     .outer-poster2 {
         height: 700px;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
     }
 
     .inner-card {
