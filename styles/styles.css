@@ -657,6 +657,10 @@ hr {
         flex-direction: column;
     }
 
+    .text-container {
+        width: 95%;
+    }
+
     .image {
         width: 95%;
     }
