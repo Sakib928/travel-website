@@ -46,15 +46,13 @@ header {
 /* nav styles */
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo-title {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: auto;
 }
 
 .nav-elements {
@@ -68,18 +66,28 @@ header {
     font-weight: 400;
 }
 
+.nav-all {
+    display: flex;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-.hidden {
+#submenu {
+    display: none;
+}
+
+.hidden-nav {
+    width: 95%;
     display: none;
 }
 
 .dropdown {
     list-style: none;
-    display: none;
+    display: flex;
 }
 
 .nav-title {
@@ -444,7 +452,7 @@ main {
 /* promotions */
 .promo {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
     margin-bottom: 20px;
     justify-content: space-between;
 }
@@ -467,6 +475,7 @@ video {
     height: 380px;
     background: linear-gradient(90deg, rgba(134, 208, 186, 1) 0%, rgba(66, 113, 117, 0.0844712885154062) 81%), url("../images/—Pngtree—summer\ ocean\ beach\ travel\ poster_1113389.jpg");
     background-size: cover;
+    background-position: center;
     padding: 50px;
     border-radius: 1rem;
 }
@@ -558,10 +567,6 @@ video {
     padding: 10%;
 }
 
-.f {
-    margin: 0;
-}
-
 .container p {
     max-width: 700px;
 }
@@ -576,22 +581,29 @@ hr {
 
 /* small devices responsive */
 @media screen and (max-width:600px) {
+
+    .nav-title,
+    .nav-title span {
+        color: #FF5400;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .logo-title img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .navbar {
+        margin: 0 auto;
+    }
+
     .nav-elements {
         display: none;
     }
 
-    .hidden {
-        display: inline-block;
-        visibility: visible;
-    }
-
-    .hidden:hover {
-        height: 160px;
-        width: 150px;
-    }
-
-    .hidden:hover .dropdown {
-        display: inline-block;
+    #submenu {
+        display: block;
     }
 
     .banner-button {
@@ -614,6 +626,7 @@ hr {
         flex-direction: column;
         width: 95%;
         padding: 0;
+        margin: 0 auto;
     }
 
     .t1,
@@ -632,7 +645,8 @@ hr {
     .inner-card {
         margin: 0 auto;
         width: 90%;
-        height: 70%;
+        height: 85%;
+        padding: 0;
     }
 
     .promo {
@@ -645,29 +659,49 @@ hr {
     }
 
     .bonus {
+        width: 95%;
         text-align: center;
+        padding: 5px;
     }
 
     .text-container {
         width: 95%;
     }
 
-    .image {
+    .web {
+        font-size: 1rem;
+    }
+
+    .save {
+        font-size: 1.2rem;
+    }
+
+    .n-box,
+    .n-button {
         width: 95%;
     }
 
     .skew {
+        width: 150px;
+        height: 80px;
+        padding: 0;
         transform: rotate(-19.628deg) translate(-35%, -45%);
     }
 }
 
 /* medium devices */
 @media screen and (min-width:600px) and (max-width:992px) {
-    * {
-        box-sizing: border-box;
-        max-width: 992px;
-        margin: 10px;
-        padding: 0;
+
+    .navbar {
+        margin: 0 auto;
+    }
+
+    .nav-elements {
+        display: none;
+    }
+
+    #submenu {
+        display: block;
     }
 
     .popular,
@@ -690,5 +724,40 @@ hr {
         width: 95%;
     }
 
+    .skew {
+        width: 324px;
+        height: 120px;
+        transform: rotate(-19.628deg) translate(-10%, -15%);
+        background: #FF5400;
+        padding-top: 10px;
+        border-radius: 16px;
+        text-align: center;
+        position: relative;
+        left: 55%;
+        top: 60%;
+    }
+}
 
+/* laptops */
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .web {
+        font-size: 1rem;
+    }
+
+    .save {
+        font-size: 1.2rem;
+    }
+
+    .skew {
+        width: 200px;
+        height: 100px;
+        transform: rotate(-19.628deg) translate(-20%, 20%);
+        background: #FF5400;
+        padding-top: 10px;
+        border-radius: 16px;
+        text-align: center;
+        position: relative;
+        left: 55%;
+        top: 60%;
+    }
 }
