@@ -39,10 +39,6 @@
 }
 
 /* header styles */
-header {
-    border: 2px solid tomato;
-}
-
 /* nav styles */
 .navbar {
     display: flex;
@@ -161,10 +157,6 @@ a {
 
 /* main section */
 /* popular section */
-main {
-    border: 2px solid blue;
-}
-
 .popular {
     display: flex;
     justify-content: space-between;
