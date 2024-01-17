@@ -4,7 +4,7 @@
 * {
     box-sizing: border-box;
     max-width: 1440px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 0;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
@@ -42,8 +42,7 @@
 /* nav styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 45%;
 }
 
 .logo-title {
@@ -54,6 +53,7 @@
 .nav-elements {
     list-style: none;
     display: flex;
+    gap: 20px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -122,6 +122,7 @@ a {
 
 .banner-fields {
     display: flex;
+    gap: 10px;
 }
 
 .box {
@@ -526,14 +527,14 @@ video {
 .skew {
     width: 324px;
     height: 120px;
-    transform: rotate(-19.628deg) translate(0, -15%);
+    transform: rotate(-19.628deg);
     background: #FF5400;
     padding-top: 10px;
     border-radius: 16px;
     text-align: center;
     position: relative;
-    left: 55%;
-    top: 60%;
+    left: 31%;
+    top: 57%;
 }
 
 .web {
@@ -613,6 +614,11 @@ hr {
         flex-direction: column;
     }
 
+    .p-image>img {
+        width: 100%;
+        height: auto;
+    }
+
     .gallery {
         display: flex;
         flex-direction: column;
@@ -637,7 +643,7 @@ hr {
     .inner-card {
         margin: 0 auto;
         width: 90%;
-        height: 85%;
+        height: auto;
         padding: 0;
     }
 
@@ -647,7 +653,7 @@ hr {
     }
 
     video {
-        width: 95%;
+        width: 100%;
     }
 
     .bonus {
@@ -678,6 +684,9 @@ hr {
         height: 80px;
         padding: 0;
         transform: rotate(-19.628deg) translate(-35%, -45%);
+        position: relative;
+        top: 75%;
+        left: 37%;
     }
 }
 
@@ -725,13 +734,17 @@ hr {
         border-radius: 16px;
         text-align: center;
         position: relative;
-        left: 55%;
+        left: 33%;
         top: 60%;
     }
 }
 
 /* laptops */
 @media screen and (min-width:992px) and (max-width:1024px) {
+    .navbar {
+        gap: 0;
+    }
+
     .web {
         font-size: 1rem;
     }
@@ -749,7 +762,7 @@ hr {
         border-radius: 16px;
         text-align: center;
         position: relative;
-        left: 55%;
+        left: 37%;
         top: 60%;
     }
 }
